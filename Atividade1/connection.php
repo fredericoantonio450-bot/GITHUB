@@ -12,4 +12,5 @@ if(isset($_GET["nome"]) && !empty($_GET["nome"])){
 }
 
 include_once "togoback.php";
+
 ?>
