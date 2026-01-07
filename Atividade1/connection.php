@@ -11,5 +11,5 @@ if(isset($_GET["nome"]) && !empty($_GET["nome"])){
     echo "Por favor, informe seu nome";
 }
 
-
+include_once "togoback.php";
 ?>
