@@ -84,3 +84,31 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
     transform: translateY(0);
 }
+
+
+/* Estilo para o Botão de Voltar (Link com cara de botão) */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-outline-primary {
+    color: #3498db;
+    border: 2px solid #3498db;
+    background: transparent;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3498db;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+}
