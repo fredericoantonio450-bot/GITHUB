@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <!-- O parâmetro v=123 força o navegador a carregar a versão nova -->
+    <link rel="stylesheet" href="CSS/style.css?v=1.1">
+
+
 </head>
 <body>
     <form action="calcula.php" method="GET">

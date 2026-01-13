@@ -87,28 +87,41 @@ input[type="submit"]:active {
 
 
 /* Estilo para o Botão de Voltar (Link com cara de botão) */
-.btn {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 0.3s ease;
+
+/* Estilo do container */
+.container-voltar {
     text-align: center;
-    margin-top: 20px;
-    cursor: pointer;
+    margin-top: 30px;
 }
 
-.btn-outline-primary {
-    color: #3498db;
-    border: 2px solid #3498db;
-    background: transparent;
+/* Botão Personalizado */
+.btn-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    color: #0d6efd;
+    background-color: #fff;
+    border: 2px solid #0d6efd;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-outline-primary:hover {
-    background-color: #3498db;
-    color: #ffffff;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+/* Efeito Hover (ao passar o mouse) */
+.btn-voltar:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+}
+
+/* Animação da seta */
+.btn-voltar span {
+    transition: transform 0.3s ease;
+}
+
+.btn-voltar:hover span {
+    transform: translateX(-5px);
 }
