@@ -10,8 +10,8 @@
 
 </head>
 <body>
-    <form action="calcula.php" method="GET">
-        <h1>Desempenho Mensal dos Funcionarios</h1>
+    <form action="calculo.php" method="GET">
+        <h1>Desempenho mensal dos funcionarios</h1>
 
     <div>
         <div>
@@ -19,22 +19,32 @@
             <input type="text" name="nome">   
         </div>
         <br>
+
         <div>
-            <label for="">Atividade entregue pelo Funcionario</label>
+            <label for="">Setor do funcionário</label>  
+            <input type="text" name="setor">   
+        </div>
+        <br>
+
+        <div>
+            <label for="">Atividade entregue pelo funcionario</label>
             <input type="number" name="desempenho" min="0">
         </div>
         <br>
         <div>
-            <label for="">Quantos Atrasos</label>
+            <label for="">Quantos atrasos</label>
             <input type="number" name="atraso" min="0">
         </div>
 
         <br>
           <div>
-            <input type="submit" value="Enviar"> <!--Butão-->
+            <input type="submit" value="Enviar"> <!--Butã   o-->
         </div>
     </div>
-
+    
     </form>
 </body>
+<footer>
+    <p>&copy; 2026 <span class="company-name">Employees Engenharia</span>. Todos os direitos reservados.</p>
+</footer>
 </html>
