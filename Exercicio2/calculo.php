@@ -8,13 +8,13 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
     $setor = $_GET["setor"];
 
         if(is_numeric($desempenho) >= 20 && is_numeric($atraso) >= 1 && is_numeric($atraso) <= 1 && is_numeric($atraso) >= 0){
-            echo "<p style=color:green; >Desempenho Excelente para o funcionário : </p>" . $nome . "" . $setor;
+            echo "<p style=color:green; >Desempenho Excelente para o funcionário : </p>" . $nome . "" . $setor . "<p style=color: yellow; >Data da entrega é : </p>" . date("Y/m/d");
         }
         elseif($desempenho > 10 && $desempenho < 19 || $atraso >= 3 && $atraso <= 3 && $atraso != 0){
-            echo "<p style=color:blue; >Desempenho Regular para o funcionário para o : </p>" . $nome;
+            echo "<p style=color:blue; >Desempenho Regular para o funcionário para o : </p>" . $nome . "<p style=color: yellow; >Data da entrega é : </p>" . date("Y/m/d");
         }
         else{
-            echo "<p style=color:red; >Desempneho Insastifátori para o funcionário: </p>" . $nome;
+            echo "<p style=color:red; >Desempneho Insastifátori para o funcionário: </p>" . $nome . "<p style=color: yellow; >Data da entrega é : </p>" . date("Y/m/d");
         }
     
 } else {
